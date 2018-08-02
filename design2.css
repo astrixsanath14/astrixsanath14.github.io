@@ -154,7 +154,7 @@
 }
 
 .wrapper8 {
-    width: 13`5px;
+    width: 1350px;
     height: 130px;
     position: absolute;
 
@@ -183,6 +183,7 @@ body {
 .xAccel-panel,
 .yAccel-panel,
 .zAccel-panel  {
+
     width: 16%;
     float: left;
     height: 500px;
@@ -193,6 +194,7 @@ body {
     font-size: 20px;
 
     transform: translate(0%, -70%);
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -203,6 +205,7 @@ body {
 
 .initial-data-value {
     transform: translate(0%, -140%);
+    color: #fff;
     text-align: center;
     font-size: 20px;
     font-weight: 70;
@@ -212,7 +215,7 @@ body {
 .title {
   background-color: #1c7a96;
   color: #fff;
-  width: 35%;
+  width: 85%;
   margin: 0 auto;
   padding: 12px;
   text-align: center;
