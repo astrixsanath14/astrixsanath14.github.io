@@ -24,7 +24,7 @@
     width: 80%;
     height: 10%;
     position: absolute;
-    top: 13%;
+    top: 12.9%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 10px 50px rgba(192,192,192, 0.3);
@@ -35,7 +35,7 @@
     width: 15%;
     height: 11.5%;
     position: absolute;
-    top: 25.5%;
+    top: 24.5%;
     left: 48%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 10px 50px rgba(192,192,192, 0.3);
@@ -47,8 +47,8 @@
     height: 11.5%;
     position: absolute;
 
-    top: 25.5%;
-    left: 63.85%;
+    top: 24.5%;
+    left: 64%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 10px 50px rgba(192,192,192, 0.3);
     overflow: hidden;
@@ -58,7 +58,7 @@
     width: 10%;
     height: 11.5%;
     position: absolute;
-    top: 25.5%;
+    top: 24.5%;
     left:9%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 10px 50px rgba(192,192,192, 0.3);
@@ -69,7 +69,7 @@
     width: 10%;
     height: 11.5%;
     position: absolute;
-    top: 25.5%;
+    top: 24.5%;
     left:19.5%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 10px 50px rgba(192,192,192, 0.3);
@@ -80,7 +80,7 @@
     width: 13%;
     height: 11.5%;
     position: absolute;
-    top: 25.5%;
+    top: 24.5%;
     left:31.5%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 10px 50px rgba(192,192,192, 0.3);
@@ -92,18 +92,18 @@
     height: 11.5%;
     position: absolute;
 
-    top: 25.5%;
+    top: 24.5%;
     left: 84.5%;
     transform: translate(-50%, -50%);
-    box-shadow: 0px 10px 50px rgba(192,192,0, 0.7);
+    box-shadow: 0px 10px 50px rgba(192,192,192, 0.7);
     overflow: hidden;
 }
 
 .wrapper3 {  /* Gyro Graph */
     width: 45%;
-    height: 12.0%;
+    height: 8%;
     position: absolute;
-    top: 37.7%;
+    top: 34.7%;
     left: 25.5%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 10px 50px rgba(192,192,192, 0.3);
@@ -111,19 +111,19 @@
 
 .wrapper3b {  /* Accel Graph */
     width: 45%;
-    height: 12.0%;
+    height: 8%;
     position: absolute;
-    top: 37.7%;
+    top: 34.7%;
     left: 74.2%;
     transform: translate(-50%, -50%);
 }
 
 .wrapper2 { /* Gyro status*/
     width: 25%;
-    height: 13.0%;
+    height: 10%;
     position: absolute;
 
-    top: 80%;
+    top: 84.5%;
     left: 19.7%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 10px 50px rgba(192,0,192, 0.3);
@@ -132,10 +132,10 @@
 
 .wrapper2b { /* Accel status*/
     width: 25%;
-    height: 13%;
+    height: 10%;
     position: absolute;
 
-    top: 80%;
+    top: 84.5%;
     left: 80%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 10px 50px rgba(192,0,192, 0.3);
@@ -144,9 +144,9 @@
 
 .wrapper2c { /* range status*/
     width: 25%;
-    height: 13%;
+    height: 10%;
     position: absolute;
-    top: 80%;
+    top: 84.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 10px 50px rgba(192,0,192, 0.3);
@@ -154,12 +154,12 @@
 }
 
 .wrapper8 { /* table  */
-    width: 86.5%;
+    width: 92%;
     height: 13.0%;
     position: absolute;
 
-    top: 93%;
-    left: 49.5%;
+    top: 98%;
+    left: 50.5%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 10px 50px rgba(192,192,192, 0.3);
     overflow: scroll;
@@ -184,7 +184,7 @@ body {
 .yAccel-panel,
 .zAccel-panel  {
 
-    width: 16%;
+    width: 18%;
     float: left;
     height: 50.0%;
     padding: 5.75%;
@@ -193,14 +193,14 @@ body {
 }
 
 .initial-data {
-    font-size: 150%;
+    font-size: 130%;
     width: 110%;
     transform: translate(0%, -70%);
     background-color: #1c7a96;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
-    margin-top: -90%;
+    margin-top: -60%;
     margin-bottom: 55%;
     position: relative;
 }
@@ -345,7 +345,7 @@ body {
   text-align: center;
     background-color: #1c7a96;
     color: #fff;
-    width: 60%;
+    width: 77.5%;
     margin: 0 auto;
     padding: 12px;
     font-size: 155%
@@ -363,30 +363,27 @@ body {
 
 .set-threshold-limit-input {
   position: absolute;
-  left: 48%;
-  top: 60%;
+  left: 35%;
+  top: 74%;
   transform: translateX(-50%);
-  height: 10.0%;
-  font-size: 120%;
-  text-align: center;
+  font-size: 80%;
+  width:55%;
 }
 
 .set-threshold-limit-inputB {
   position: absolute;
-  left: 48%;
-  top: 60%;
+  left: 35%;
+  top: 74%;
   transform: translateX(-50%);
-  height: 100%;
-  font-size: 120%;
-  text-align: center;
+  font-size: 80%;
+  width:55%;
 }
 
 .set-threshold-limit-inputC {
   position: absolute;
-  left: 48%;
-  top: 60%;
+  left: 35%;
+  top: 74%;
   transform: translateX(-50%);
-  height: 10.0%;
-  font-size: 120%;
-  text-align: center;
+  font-size: 80%;
+  width:40%;
 }

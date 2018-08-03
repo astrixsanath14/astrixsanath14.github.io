@@ -11,7 +11,8 @@ var dataPoints6 = [];
 var chart1 = new CanvasJS.Chart("chartContainer1", {
 
 	title: {
-		text: "Live Gyro Demo"
+		text: "Live Gyro Demo",
+		fontSize: 25
 		//backgroundColor: "black"
 	},
 	axisY:{
@@ -22,7 +23,7 @@ var chart1 = new CanvasJS.Chart("chartContainer1", {
 	legend: {
     cursor:"pointer",
 		verticalAlign: "top",
-		fontSize: 22,
+		fontSize: 20,
 		fontColor: "dimGrey",
 		itemclick : toggleDataSeries
 	},
@@ -48,7 +49,8 @@ var chart1 = new CanvasJS.Chart("chartContainer1", {
 
 var chart2 = new CanvasJS.Chart("chartContainer2", {
 	title: {
-		text: "Live Accel Demo"
+		text: "Live Accel Demo",
+				fontSize: 25
 	},
 	axisY:{
 		includeZero: false,
@@ -58,7 +60,7 @@ var chart2 = new CanvasJS.Chart("chartContainer2", {
 	legend: {
     cursor:"pointer",
 		verticalAlign: "top",
-		fontSize: 22,
+		fontSize: 20,
 		fontColor: "dimGrey",
 		itemclick : toggleDataSeries
 	},

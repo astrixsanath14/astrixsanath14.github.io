@@ -421,7 +421,7 @@
               if(calStatus === true){
                         var UUID = parseFloat(tempData[6]);
                         document.querySelector('#oLimitID').textContent = "Callibrated !!!";
-                        document.getElementById("letsTryCalStat").style.color= "	#008000";
+                        document.getElementById("#oLimitID").style.color= "	#008000";
                         //console.log(typeof(timeTracker[UUID])=='undefined');
 
                         if(typeof(devicesHistory[UUID])=='undefined'||devicesHistory[UUID][3]==0){
@@ -527,7 +527,7 @@
                   }
                   else{
                     document.querySelector('#oLimitID').textContent = (50-initialCounter) + " records !!!!";
-                    document.getElementById("letsTryCalStat").style.boxShadow= "#FF0000";
+                    document.getElementById("#oLimitID").style.boxShadow= "#FF0000";
                 }
                 /*console.log("Topic:     " + message.destinationName);
                 //console.log("QoS:       " + message.qos);
@@ -756,9 +756,7 @@ console.log('no data from sensor 2');
       //mqtt.connect();
       return false;
   		}
-
       //sqlite end
-
       */
 	  function MQTTconnect1() {
 		console.log("connecting to "+ host +" "+ port);
@@ -818,20 +816,20 @@ console.log('no data from sensor 2');
 
        <div class="wrapper1b clearfix">
              <div class="xGyro-panel">
-                 <div class="initial-data" id="name-1">Yaw</div>
+                 <div class="initial-data" id="name-1">Gyro-X</div>
                     <div class="initial-data-value" id="xID">Initialising..
                     </div>
               </div>
 
               <div class="yGyro-panel">
-                  <div class="initial-data" id="name-1">Pitch
+                  <div class="initial-data" id="name-1">Gyro-Y
                   </div>
                      <div class="initial-data-value" id="yID">Initialising..
                      </div>
                </div>
 
                <div class="zGyro-panel">
-                   <div class="initial-data" id="name-1">Roll
+                   <div class="initial-data" id="name-1">Gyro-Z
                    </div>
                       <div class="initial-data-value" id="zID">Initialising..
                       </div>
@@ -924,19 +922,19 @@ console.log('no data from sensor 2');
       </div>
 
       <div class="wrapper6a clearfix"><!--IS IS FOR G SET Threshold-->
-        <div class="set-threshold-limit" id="stLimitIDa">G Th:</div>
+        <div class="set-threshold-limit" id="stLimitIDa">Set Gyro</div>
 
-        <div class="set-threshold-limit-input" id="stLimitInputID"><input type="text" id="tDataA" name="LastNameA" value="0.5"><br></div>
+        <div class="set-threshold-limit-input" id="stLimitInputID"><input type="text" id="tDataA" name="LastNameA" value="10"><br></div>
       </div>
 
       <div class="wrapper6b clearfix"><!--IS IS FOR A SET Threshold-->
-        <div class="set-threshold-limitB" id="stLimitIDb">A Th:</div>
+        <div class="set-threshold-limitB" id="stLimitIDb">Set Accelo</div>
 
-        <div class="set-threshold-limit-inputB" id="stLimitInputID"><input type="text" id="tDataB" name="LastNameB" value="1000"><br></div>
+        <div class="set-threshold-limit-inputB" id="stLimitInputID"><input type="text" id="tDataB" name="LastNameB" value="10000"><br></div>
       </div>
 
       <div class="wrapper6c clearfix"><!--IS IS FOR BLE SET Threshold-->
-        <div class="set-threshold-limitC" id="stLimitIDc">BLE Th:</div>
+        <div class="set-threshold-limitC" id="stLimitIDc">Set Range</div>
 
         <div class="set-threshold-limit-inputC" id="stLimitInputID"><input type="text" id="tDataC" name="LastNameC" value="-89"><br></div>
       </div>
@@ -948,7 +946,7 @@ console.log('no data from sensor 2');
           <tr>
             <td>S.No.</td>
             <td>UUID</td>
-            <td>Session Number</td>
+            <td>Session No.</td>
             <td>Enter Time</td>
             <td>Exit Time</td>
             <td>Session-AT</td>
@@ -962,16 +960,16 @@ console.log('no data from sensor 2');
           <tr>
             <td>0</td>
             <td><input size=10 type="text" id="lngbox" readonly=true/ value="NIL"></td>
-            <td><input size=19 type="text" id="lngbox" readonly=true/ value="NIL"></td>
-            <td><input size=20 type="text" id="lngbox" readonly=true/ value="NIL"></td>
-            <td><input size=20 type="text" id="lngbox" readonly=true/ value="NIL"></td>
-            <td><input size=20 type="text" id="lngbox" readonly=true/ value="NIL"></td>
-            <td><input size=20 type="text" id="lngbox" readonly=true/ value="NIL"></td>
-            <td><input size=20 type="text" id="lngbox" readonly=true/ value="NIL"></td>
-            <td><input size=20 type="text" id="lngbox" readonly=true/ value="NIL"></td>
+            <td><input size=12 type="text" id="lngbox" readonly=true/ value="NIL"></td>
+            <td><input size=16 type="text" id="lngbox" readonly=true/ value="NIL"></td>
+            <td><input size=16 type="text" id="lngbox" readonly=true/ value="NIL"></td>
+            <td><input size=16 type="text" id="lngbox" readonly=true/ value="NIL"></td>
+            <td><input size=16 type="text" id="lngbox" readonly=true/ value="NIL"></td>
+            <td><input size=16 type="text" id="lngbox" readonly=true/ value="NIL"></td>
+            <td><input size=16 type="text" id="lngbox" readonly=true/ value="NIL"></td>
 
-            <td><input size=20 type="text" id="lngbox" readonly=true/ value="NIL"></td>
-            <td><input size=20 type="text" id="lngbox" readonly=true/ value="NIL"></td>
+            <td><input size=16 type="text" id="lngbox" readonly=true/ value="NIL"></td>
+            <td><input size=16 type="text" id="lngbox" readonly=true/ value="NIL"></td>
           </tr>
         </table>
       </div>
