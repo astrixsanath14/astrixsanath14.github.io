@@ -1,12 +1,13 @@
 <html>
    <head>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" />
      <link type="text/css" rel="stylesheet" href="design2.css">
-      <title>Real Time Gyro Values</title>
-  	  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript">
-	 </script>
-   <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
-   <script type = "text/javascript" language = "javascript">
+     <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
 
+    <title>Real Time Interface</title>
+
+   <script type = "text/javascript" language = "javascript">
    var deviceList = [];
    var timeDeviceList = [];
    //var thresholdLimit = parseFloat(prompt('Enter a threshold value : '));
@@ -371,11 +372,11 @@
                   }
                   else{
                     if(Math.abs(prevX-xGyro)>=thresholdLimit||Math.abs(prevY-yGyro)>=thresholdLimit||Math.abs(prevZ-zGyro)>=thresholdLimit){
-                      document.querySelector('#vibID').textContent = "Activity Started !!!";
+                      document.querySelector('#vibID').textContent = "Started !!!";
                       activityMonitor = 1;
                     }
                     else{
-                      document.querySelector('#vibID').textContent = "Activity Stopped !!!";
+                      document.querySelector('#vibID').textContent = "Stopped !!!";
                     }
 
                     var acceloStat = "";
@@ -420,6 +421,7 @@
               if(calStatus === true){
                         var UUID = parseFloat(tempData[6]);
                         document.querySelector('#oLimitID').textContent = "Callibrated !!!";
+                        document.getElementById("letsTryCalStat").style.color= "	#008000";
                         //console.log(typeof(timeTracker[UUID])=='undefined');
 
                         if(typeof(devicesHistory[UUID])=='undefined'||devicesHistory[UUID][3]==0){
@@ -525,6 +527,7 @@
                   }
                   else{
                     document.querySelector('#oLimitID').textContent = (50-initialCounter) + " records !!!!";
+                    document.getElementById("letsTryCalStat").style.boxShadow= "#FF0000";
                 }
                 /*console.log("Topic:     " + message.destinationName);
                 //console.log("QoS:       " + message.qos);
@@ -811,6 +814,9 @@ console.log('no data from sensor 2');
        <div class="wrapper1 clearfix">
            <div class="title">PROXIMITY AND ACTIVIY TRACKING SYSTEM
             </div>
+      </div>
+
+       <div class="wrapper1b clearfix">
              <div class="xGyro-panel">
                  <div class="initial-data" id="name-1">Yaw</div>
                     <div class="initial-data-value" id="xID">Initialising..
@@ -854,17 +860,15 @@ console.log('no data from sensor 2');
                        <div class="initial-data-value" id="azID">Initialising..
                        </div>
                 </div>
-
         </div>
-
       <div class="wrapper2 clearfix">
-      <div class="vib-box">Gyro Status
+      <div class="vib-box">Activity Status
       <div class="vibStat" id="vibID">Initialising ...</div>
     </div>
     </div>
 
     <div class="wrapper2b clearfix">
-    <div class="vib-boxB">Accel Status
+    <div class="vib-boxB">Direction
       <div class="vibStatB" id="vibIDB">Initialising ...</div>
     </div>
     </div>
@@ -902,19 +906,19 @@ console.log('no data from sensor 2');
       </div>
     -->
       <div class="wrapper5 clearfix"><!--callibration offset status-->
-          <div class="offset-limit-main">Callibration Status
+          <div class="offset-limit-main" id"letsTryCalStat">Callibration Status
           <div class="offset-limit" id="oLimitID">Initialising ...</div>
       </div>
       </div>
 
       <div class="wrapper5a clearfix"><!--UUID-->
-          <div class="offset-limit-maina">UUID
+          <div class="offset-limit-maina">Unique ID
           <div class="offset-limita" id="oLimitIDa">Initialising ...</div>
       </div>
       </div>
 
       <div class="wrapper5b clearfix"><!--UUID-->
-          <div class="offset-limit-mainb">RSSI
+          <div class="offset-limit-mainb">Signal
           <div class="offset-limitb" id="oLimitIDb">NA</div>
       </div>
       </div>

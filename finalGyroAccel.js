@@ -9,8 +9,10 @@ var dataPoints4 = [];
 var dataPoints5 = [];
 var dataPoints6 = [];
 var chart1 = new CanvasJS.Chart("chartContainer1", {
+
 	title: {
 		text: "Live Gyro Demo"
+		//backgroundColor: "black"
 	},
 	axisY:{
 		includeZero: false,
