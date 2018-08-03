@@ -3,7 +3,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" />
      <link type="text/css" rel="stylesheet" href="design2.css">
-     <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
 
     <title>Real Time Interface</title>
 
@@ -421,7 +420,7 @@
               if(calStatus === true){
                         var UUID = parseFloat(tempData[6]);
                         document.querySelector('#oLimitID').textContent = "Callibrated !!!";
-                        document.getElementById("#oLimitID").style.color= "	#008000";
+                        //document.getElementById("#oLimitID").style.color= "	#008000";
                         //console.log(typeof(timeTracker[UUID])=='undefined');
 
                         if(typeof(devicesHistory[UUID])=='undefined'||devicesHistory[UUID][3]==0){
@@ -527,7 +526,7 @@
                   }
                   else{
                     document.querySelector('#oLimitID').textContent = (50-initialCounter) + " records !!!!";
-                    document.getElementById("#oLimitID").style.boxShadow= "#FF0000";
+                    //document.getElementById("#oLimitID").style.boxShadow= "#FF0000";
                 }
                 /*console.log("Topic:     " + message.destinationName);
                 //console.log("QoS:       " + message.qos);
