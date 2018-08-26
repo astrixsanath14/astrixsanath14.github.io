@@ -245,6 +245,7 @@
       //x.appendChild(new_row);
      sqlStringMessage = String(new_row.cells[0].innerHTML) + "#" + String(new_row.cells[1].innerHTML) + "#" + String(new_row.cells[2].innerHTML) + "#" + String(new_row.cells[3].innerHTML) + "#" + String(new_row.cells[4].innerHTML) + "#" + String(new_row.cells[5].innerHTML)+ "#" + String(new_row.cells[6].innerHTML)+ "#" + String(new_row.cells[7].innerHTML)+ "#" + String(new_row.cells[8].innerHTML)+ "#" + String(new_row.cells[9].innerHTML)+ "#" + String(new_row.cells[10].innerHTML);
 
+      //alert(sqlStringMessage);
      //
       //MQTTconnect();
       message = new Paho.MQTT.Message(sqlStringMessage);
@@ -818,20 +819,20 @@ console.log('no data from sensor 2');
 
        <div class="wrapper1b clearfix">
              <div class="xGyro-panel">
-                 <div class="initial-data" id="name-1">Gyro-X</div>
+                 <div class="initial-data" id="name-1">Yaw</div>
                     <div class="initial-data-value" id="xID">Initialising..
                     </div>
               </div>
 
               <div class="yGyro-panel">
-                  <div class="initial-data" id="name-1">Gyro-Y
+                  <div class="initial-data" id="name-1">Pitch
                   </div>
                      <div class="initial-data-value" id="yID">Initialising..
                      </div>
                </div>
 
                <div class="zGyro-panel">
-                   <div class="initial-data" id="name-1">Gyro-Z
+                   <div class="initial-data" id="name-1">Roll
                    </div>
                       <div class="initial-data-value" id="zID">Initialising..
                       </div>
@@ -925,7 +926,6 @@ console.log('no data from sensor 2');
 
       <div class="wrapper6a clearfix"><!--IS IS FOR G SET Threshold-->
         <div class="set-threshold-limit" id="stLimitIDa">Set Gyro</div>
-
         <div class="set-threshold-limit-input" id="stLimitInputID"><input type="text" id="tDataA" name="LastNameA" value="10"><br></div>
       </div>
 
